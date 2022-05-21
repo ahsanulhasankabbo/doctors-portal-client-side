@@ -14,6 +14,8 @@ import MyAppointments from './Pages/DashBoard/MyAppointments';
 import MyReview from './Pages/DashBoard/MyReview';
 import Users from './Pages/DashBoard/Users';
 import RequirAdmin from './Pages/Login/RequirAdmin';
+import AddDoctor from './Pages/DashBoard/AddDoctor';
+import ManageDoctors from './Pages/DashBoard/ManageDoctors';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           <Route index element={<MyAppointments></MyAppointments>}></Route>
           <Route path='myreview' element={<MyReview></MyReview>}></Route>
           <Route path='users' element={<RequirAdmin><Users></Users></RequirAdmin>}></Route>
+          <Route path='addDoctor' element={<RequirAdmin><AddDoctor></AddDoctor></RequirAdmin>}></Route>
+          <Route path='manageDoctor' element={<RequirAdmin><ManageDoctors></ManageDoctors></RequirAdmin>}></Route>
         </Route>
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
